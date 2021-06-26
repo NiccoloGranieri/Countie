@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF2D6B7426878A87009B952B /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D6B7326878A87009B952B /* Counter.swift */; };
+		BF2D6B7626878AC6009B952B /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D6B7526878AC6009B952B /* CounterView.swift */; };
+		BF2D6B7826878FA9009B952B /* AddCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D6B7726878FA9009B952B /* AddCounterView.swift */; };
 		BFD8D8C82687897400E71FCC /* CountieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD8D8C72687897400E71FCC /* CountieApp.swift */; };
 		BFD8D8CA2687897400E71FCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD8D8C92687897400E71FCC /* ContentView.swift */; };
 		BFD8D8CC2687897500E71FCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD8D8CB2687897500E71FCC /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF2D6B7326878A87009B952B /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		BF2D6B7526878AC6009B952B /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		BF2D6B7726878FA9009B952B /* AddCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterView.swift; sourceTree = "<group>"; };
 		BFD8D8C42687897400E71FCC /* Countie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD8D8C72687897400E71FCC /* CountieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountieApp.swift; sourceTree = "<group>"; };
 		BFD8D8C92687897400E71FCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +60,9 @@
 			children = (
 				BFD8D8C72687897400E71FCC /* CountieApp.swift */,
 				BFD8D8C92687897400E71FCC /* ContentView.swift */,
+				BF2D6B7326878A87009B952B /* Counter.swift */,
+				BF2D6B7526878AC6009B952B /* CounterView.swift */,
+				BF2D6B7726878FA9009B952B /* AddCounterView.swift */,
 				BFD8D8CB2687897500E71FCC /* Assets.xcassets */,
 				BFD8D8D02687897500E71FCC /* Info.plist */,
 				BFD8D8CD2687897500E71FCC /* Preview Content */,
@@ -140,6 +149,9 @@
 			files = (
 				BFD8D8CA2687897400E71FCC /* ContentView.swift in Sources */,
 				BFD8D8C82687897400E71FCC /* CountieApp.swift in Sources */,
+				BF2D6B7426878A87009B952B /* Counter.swift in Sources */,
+				BF2D6B7626878AC6009B952B /* CounterView.swift in Sources */,
+				BF2D6B7826878FA9009B952B /* AddCounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
