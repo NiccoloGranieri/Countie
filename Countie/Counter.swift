@@ -8,32 +8,45 @@
 import Foundation
 
 struct Counter: Identifiable, Codable {
-    let id = UUID()
+    private(set) var id = UUID()
     var name = ""
+    var count = 0
+    var step = 1
+    var button = ""
+    
+    mutating func increment(by increase: Int) {
+        self.count += increase
+    }
 }
 
-class Elements: ObservableObject, Codable {
-    enum CodingKeys: CodingKey {
-        case counters
+class Elements: ObservableObject {
+    
+    @Published var counters = [Counter]() {
+        didSet {
+            let encoder = JSONEncoder()
+            
+            if let encoded = try?
+                encoder.encode(counters) {
+                UserDefaults.standard.set(encoded, forKey: "Counters")
+            }
+        }
     }
     
-    let encoder = JSONEncoder()
-    let decoder = JSONDecoder()
-    
-    @Published var counters = [Counter]()
-    
-    init() { }
-    
-    required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
+    init() {
         
-        counters = try container.decode([Counter].self, forKey: .counters)
-    }
-    
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
+        if let counters = UserDefaults.standard.data(forKey: "Counters")
         
-        try container.encode(counters, forKey: .counters)
+        {
+            let decoder = JSONDecoder()
+            
+            if let decoded = try?
+                decoder.decode([Counter].self, from: counters) {
+                self.counters = decoded
+                return
+            }
+        }
+        
+        self.counters = []
     }
     
 }

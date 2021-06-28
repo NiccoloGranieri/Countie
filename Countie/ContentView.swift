@@ -14,9 +14,15 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(elements.counters, id: \.id) { counter in
-                    VStack {
-                        Text(counter.name)
+                ForEach(Array(zip(elements.counters.indices, elements.counters)), id: \.1.id) { index, counter in
+                    NavigationLink(destination: CounterView(counterIndex: index)) {
+                        VStack {
+                            HStack {
+                                Text(counter.name)
+                                Spacer()
+                                Text("\(counter.count)")
+                            }
+                        }
                     }
                 }
                 .onDelete(perform: deleteCounter)
