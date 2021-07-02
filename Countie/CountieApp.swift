@@ -12,6 +12,7 @@ struct CountieApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(Elements())
         }
     }
 }

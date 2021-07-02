@@ -70,7 +70,7 @@ struct AddCounterView: View {
                     if self.step == "Custom" {
                         self.step = self.customStep
                     }
-                    let counter = Counter(name: self.name, count: Int(self.startCount) ?? 1, step: Int(self.step) ?? 1, button: self.emojiButton.emoji )
+                    let counter = Counter(name: self.name, count: Int(self.startCount) ?? 0, step: Int(self.step) ?? 1, button: self.emojiButton.emoji )
                     self.elements.counters.append(counter)
                     self.presentationMode.wrappedValue.dismiss()
                 })

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var elements = Elements()
+    @EnvironmentObject var elements: Elements
     @State private var showingAddCounter = false
     
     var body: some View {
@@ -18,6 +18,7 @@ struct ContentView: View {
                     NavigationLink(destination: CounterView(counterIndex: index)) {
                         VStack {
                             HStack {
+                                Text(counter.button)
                                 Text(counter.name)
                                 Spacer()
                                 Text("\(counter.count)")
