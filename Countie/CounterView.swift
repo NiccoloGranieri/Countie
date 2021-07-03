@@ -36,14 +36,8 @@ struct CounterView: View {
             Button(action: {
                 elements.counters[counterIndex].increment(by: elements.counters[counterIndex].step)
             }) {
-                if elements.counters[counterIndex].button.isSingleEmoji {
-                    Text(elements.counters[counterIndex].button)
-                        .font(.system(size: 200))
-                } else {
-                    Image("Button")
-                        .resizable()
-                        .scaledToFit()
-                }
+                Text(elements.counters[counterIndex].button)
+                    .font(.system(size: 200))
             }
             Spacer()
         }
