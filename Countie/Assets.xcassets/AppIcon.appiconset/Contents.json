@@ -1,62 +1,116 @@
 {
-  "images" : [
+  "images": [
     {
-      "filename" : "Icon-40x40.png",
-      "idiom" : "iphone",
-      "scale" : "2x",
-      "size" : "20x20"
+      "idiom": "iphone",
+      "scale": "2x",
+      "size": "20x20",
+      "filename": "Countie_40.png"
     },
     {
-      "filename" : "Icon-60x60.png",
-      "idiom" : "iphone",
-      "scale" : "3x",
-      "size" : "20x20"
+      "idiom": "iphone",
+      "scale": "3x",
+      "size": "20x20",
+      "filename": "Countie_60.png"
     },
     {
-      "filename" : "Icon-58x58.png",
-      "idiom" : "iphone",
-      "scale" : "2x",
-      "size" : "29x29"
+      "idiom": "iphone",
+      "scale": "2x",
+      "size": "29x29",
+      "filename": "Countie_58.png"
     },
     {
-      "filename" : "Icon-87x87.png",
-      "idiom" : "iphone",
-      "scale" : "3x",
-      "size" : "29x29"
+      "idiom": "iphone",
+      "scale": "3x",
+      "size": "29x29",
+      "filename": "Countie_87.png"
     },
     {
-      "filename" : "Icon-80x80.png",
-      "idiom" : "iphone",
-      "scale" : "2x",
-      "size" : "40x40"
+      "idiom": "iphone",
+      "scale": "2x",
+      "size": "40x40",
+      "filename": "Countie_80.png"
     },
     {
-      "filename" : "Icon-120x120.png",
-      "idiom" : "iphone",
-      "scale" : "3x",
-      "size" : "40x40"
+      "idiom": "iphone",
+      "scale": "3x",
+      "size": "40x40",
+      "filename": "Countie_120.png"
     },
     {
-      "filename" : "Icon-120x120.png",
-      "idiom" : "iphone",
-      "scale" : "2x",
-      "size" : "60x60"
+      "idiom": "iphone",
+      "scale": "2x",
+      "size": "60x60",
+      "filename": "Countie_120.png"
     },
     {
-      "filename" : "Icon-180x180.png",
-      "idiom" : "iphone",
-      "scale" : "3x",
-      "size" : "60x60"
+      "idiom": "iphone",
+      "scale": "3x",
+      "size": "60x60",
+      "filename": "Countie_180.png"
     },
     {
-      "filename" : "Icon-1024x1024.png",
-      "idiom" : "ios-marketing",
-      "scale" : "1x",
-      "size" : "1024x1024"
+      "idiom": "ipad",
+      "scale": "1x",
+      "size": "20x20",
+      "filename": "Countie_20.png"
+    },
+    {
+      "idiom": "ipad",
+      "scale": "2x",
+      "size": "20x20",
+      "filename": "Countie_40.png"
+    },
+    {
+      "idiom": "ipad",
+      "scale": "1x",
+      "size": "29x29",
+      "filename": "Countie_29.png"
+    },
+    {
+      "idiom": "ipad",
+      "scale": "2x",
+      "size": "29x29",
+      "filename": "Countie_58.png"
+    },
+    {
+      "idiom": "ipad",
+      "scale": "1x",
+      "size": "40x40",
+      "filename": "Countie_40.png"
+    },
+    {
+      "idiom": "ipad",
+      "scale": "2x",
+      "size": "40x40",
+      "filename": "Countie_80.png"
+    },
+    {
+      "idiom": "ipad",
+      "scale": "1x",
+      "size": "76x76",
+      "filename": "Countie_76.png"
+    },
+    {
+      "idiom": "ipad",
+      "scale": "2x",
+      "size": "76x76",
+      "filename": "Countie_152.png"
+    },
+    {
+      "idiom": "ipad",
+      "scale": "2x",
+      "size": "83.5x83.5",
+      "filename": "Countie_167.png"
+    },
+    {
+      "idiom": "ios-marketing",
+      "scale": "1x",
+      "size": "1024x1024",
+      "filename": "Countie_1024.png"
     }
   ],
-  "info" : {
-    "author" : "xcode",
-    "version" : 1
+  "info": {
+    "author": "xcode",
+    "version": 1
   }
 }
