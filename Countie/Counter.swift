@@ -12,7 +12,7 @@ struct Counter: Identifiable, Codable {
     var name = ""
     var count = 0
     var step = 1
-    var button = ""
+    var button = "🔴"
     
     mutating func increment(by increase: Int) {
         self.count += increase
