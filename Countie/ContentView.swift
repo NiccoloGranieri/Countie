@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var elements: Elements
     @State private var showingAddCounter = false
+    @State private var searchText = ""
     
     var body: some View {
         NavigationView {
@@ -53,8 +54,8 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .preferredColorScheme(.light)
+            .environment(\.locale, .init(identifier: "en"))
         ContentView()
-            .preferredColorScheme(.dark)
+            .environment(\.locale, .init(identifier: "it"))
     }
 }

@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Countie
+
+  Created by Niccolo Granieri on 03/07/2021.
+  
+*/
+
+"Counters" = "Elementi";
+"Add Countable" = "Aggiungi Elemento";
+"What do you want to count?" = "Cosa vuoi contare?";
+"What increment do you want to count by?" = "A incrementi di quanto vuoi contare?";
+"Increment Steps" = "Incrementi";
+"Custom" = "Personalizzato";
+"Steps" = "Incremento";
+"Optional:" = "Impostazioni aggiuntive:";
+"Start counting from:" = "Inizia a contare da:";
+"Enable custom button" = "Abilita bottone personalizzato";
+"Use custom emoji as button" = "Usa emoji personalizzato come bottone";
+"Save" = "Salva";
