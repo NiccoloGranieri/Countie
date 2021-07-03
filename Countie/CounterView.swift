@@ -23,6 +23,13 @@ extension String {
     var containsEmoji: Bool { contains { $0.isEmoji } }
 }
 
+struct AnimatedButton: ButtonStyle {
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? 0.9 : 1.0)
+    }
+}
+
 struct CounterView: View {
     @EnvironmentObject var elements: Elements
     var counterIndex: Int
@@ -39,6 +46,8 @@ struct CounterView: View {
                 Text(elements.counters[counterIndex].button)
                     .font(.system(size: 200))
             }
+            .buttonStyle(AnimatedButton())
+        
             Spacer()
         }
         .navigationBarTitle(Text(elements.counters[counterIndex].name))
