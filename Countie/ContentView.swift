@@ -41,6 +41,7 @@ struct ContentView: View {
                 }
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         .sheet(isPresented: $showingAddCounter) {
             AddCounterView(elements: self.elements)
         }
